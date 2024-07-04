@@ -27,7 +27,7 @@
 
 <ol>
   <li><strong>Clone the repository:</strong><br>
-    <code>git clone https://github.com/your-username/lensscout.git</code></li>
+    <code>git clone [https://github.com/your-username/](https://github.com/rosoltuhul1)lensscout.git</code></li>
   <li><strong>Navigate to the project directory:</strong><br>
     <code>cd lensscout</code></li>
   <li><strong>Install dependencies:</strong><br>
@@ -54,6 +54,6 @@
 
 <h2>Contact</h2>
 
-<p>Rosol Tuhul - insert your email address here</p>
+<p>Rosol Tuhul - rosoltuhul12@hotmail.com</p>
 
 <p>Project Link: <a href="[https://github.com/your-username/lensscout](https://github.com/rosoltuhul1)">[https://github.com/your-username/lensscout](https://github.com/rosoltuhul1)</a></p>
