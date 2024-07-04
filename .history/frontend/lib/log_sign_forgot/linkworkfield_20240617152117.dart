@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+
+class LastWorkTextField extends StatefulWidget {
+  const LastWorkTextField({super.key, required this.controller});
+  final TextEditingController controller;
+
+  @override
+  State<LastWorkTextField> createState() => _LastWorkTextField();
+}
+
+class _LastWorkTextField extends State<LastWorkTextField> {
+  var obscureText = true;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: TextFormField(
+        keyboardType: TextInputType.name,
+        controller: widget.controller,
+        decoration: InputDecoration(
+          hintText: 'Link to your Work',
+          contentPadding: const EdgeInsets.all(18),
+          filled: true,
+          fillColor: const Color.fromARGB(255, 207, 235, 244), // Background color
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30), // Rounded border
+              borderSide: BorderSide.none),
+          hintStyle: const TextStyle(fontSize: 16, color: Color(0xFF7d7d7d)),
+        ),
+        style: const TextStyle(fontSize: 20, color: Color(0xFF000000)),
+        validator: (value) {
+          if (value!.isEmpty) {
+            return 'Please Enter Last Name';
+          }
+          return null;
+        },
+      ),
+    );
+  }
+}
